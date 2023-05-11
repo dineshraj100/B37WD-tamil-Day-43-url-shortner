@@ -46,7 +46,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export function AllocationTableComp() {
   const APIFront = 'https://heartfelt-genie-f4120b.netlify.app';
-  const APIFrontShow = 'heartfelt-genie-f4120b.netlify.app';
+  const APIFrontShow = 'heartfelt-genie.netlify.app'; //this is to show the short url in table so u can give any shoty name like bitly or something
   const tableData = useSelector((state) => state.urls.table);
   const dispatch = useDispatch();
   const navigate = useNavigate();
