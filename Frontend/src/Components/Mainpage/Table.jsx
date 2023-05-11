@@ -45,8 +45,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 export function AllocationTableComp() {
-  const APIFront = 'https://s-u.netlify.app';
-  const APIFrontShow = 's-u.netlify.app';
+  const APIFront = 'https://heartfelt-genie-f4120b.netlify.app';
+  const APIFrontShow = 'https://heartfelt-genie-f4120b.netlify.app';
   const tableData = useSelector((state) => state.urls.table);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -214,13 +214,13 @@ export function AllocationTableComp() {
                     </StyledTableCell>
                     <StyledTableCell style={{ textAlign: 'center' }}>
                       <CopyToClipboard
-                        text={`s-u.netlify.app/${row.shortUrl}`}
+                        text={`https://heartfelt-genie-f4120b.netlify.app/${row.shortUrl}`}
                         onCopy={() => handleCopy()}
                       >
                         <Tooltip
                           title={
                             copy
-                              ? `Copy : s-u.netlify.app/${row.shortUrl}`
+                              ? `Copy : https://heartfelt-genie-f4120b.netlify.app/${row.shortUrl}`
                               : 'Copied!'
                           }
                           arrow
